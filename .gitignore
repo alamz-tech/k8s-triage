@@ -1,0 +1,12 @@
+# Build, python & temporary artifacts
+.venv/
+assets_extracted/
+*.py
+template.pptx
+.DS_Store
+
+# PRIVATE TIER - Never push to public repo
+private/
+
+# PUBLISH-AFTER TIER - Released after the session on 24 October 2026
+publish-after/
