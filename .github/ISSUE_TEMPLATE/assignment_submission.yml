@@ -7,7 +7,9 @@ body:
     attributes:
       value: |
         ### DevFest Abuja 2026: Masterclass Submission
-        Thanks for taking on the debugging challenge! Fill out this form with your diagnosis and screenshot. Hussein will review your submission and reply directly on this issue.
+        Thanks for taking on the debugging challenge! Fill out this form with your diagnosis and screenshot.
+        
+        **Reward:** Verified submissions receive an invite to the **Career Accelerator WhatsApp Group** delivered via official email from `hussein@alamztech.com`. Do not post phone numbers publicly in this issue.
 
   - type: input
     id: name
