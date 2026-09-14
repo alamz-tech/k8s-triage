@@ -82,7 +82,7 @@ All verified submissions will receive:
    *(Example terminal output: `Verified by @johndoe` followed by `reports-batch ... 1/1 Running`)*.
 3. **Write Your Explanation:** Formulate one sentence naming the failure layer and the exact change you made.
 4. **Submit via GitHub Issue:** Open a **[New Submission Issue](https://github.com/alamz-tech/k8s-triage/issues/new/choose)** using the pre-formatted submission form.
-5. **Deadline:** 31 October 2026 (one week from session date).
+5. **Deadline:** 1 November 2026 (one week from session date).
 
 Submissions with incorrect diagnoses will still receive detailed feedback if your reasoning is explained.
 
