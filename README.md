@@ -31,13 +31,13 @@ Solutions, root-cause explanations, and fixed manifests publish to this reposito
 Open a terminal on [Killercoda Kubernetes Playground](https://killercoda.com/playgrounds/scenario/kubernetes) and apply the broken workloads:
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/alamz-tech/k8s-triage/main/repo-now/broken.yaml
+kubectl apply -f https://raw.githubusercontent.com/alamz-tech/k8s-triage/main/broken.yaml
 ```
 
 If working from a cloned repository:
 
 ```bash
-kubectl apply -f repo-now/broken.yaml
+kubectl apply -f broken.yaml
 ```
 
 Check the status of the three workloads:
@@ -55,25 +55,34 @@ kubectl get pods -n round-3
 Apply each assignment manifest individually:
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/alamz-tech/k8s-triage/main/repo-now/assignment-round-4.yaml
-kubectl apply -f https://raw.githubusercontent.com/alamz-tech/k8s-triage/main/repo-now/assignment-round-5.yaml
+kubectl apply -f https://raw.githubusercontent.com/alamz-tech/k8s-triage/main/assignment-round-4.yaml
+kubectl apply -f https://raw.githubusercontent.com/alamz-tech/k8s-triage/main/assignment-round-5.yaml
 ```
 
 If working from a cloned repository:
 
 ```bash
-kubectl apply -f repo-now/assignment-round-4.yaml
-kubectl apply -f repo-now/assignment-round-5.yaml
+kubectl apply -f assignment-round-4.yaml
+kubectl apply -f assignment-round-5.yaml
 ```
+
+### Rewards for Submissions
+All verified submissions will receive:
+1. **Invite to the Career Accelerator WhatsApp Group**
+2. **20% Discount to The Production Cohort**
+3. **Personalized feedback on your diagnosis and fix**
 
 ### Submission Instructions
 
-1. Fix the manifest so the pod reaches a healthy `Running` state and `Ready` condition.
-2. Take a screenshot showing your terminal watermark and healthy pods:
-   `echo "Verified by @<your-github-username>" && kubectl get pods -n <namespace>`
-3. Write one sentence naming the failure layer and the exact change you made.
-4. Submit via a **[GitHub Issue on this repository](https://github.com/alamz-tech/k8s-triage/issues/new/choose)** (use the pre-formatted Submission Form) or message Hussein Alamutu on LinkedIn at [linkedin.com/in/hussein-alamutu](https://linkedin.com/in/hussein-alamutu).
-5. Deadline: 31 October 2026 (one week from session date).
+1. **Fix the Manifest:** Update the workload YAML so the pod reaches a healthy `Running` state and `1/1` Ready condition.
+2. **Capture Proof with Terminal Watermark:** Run the following command in your terminal so your GitHub username appears directly above the healthy pod table:
+   ```bash
+   echo "Verified by @<your-github-username>" && kubectl get pods -n <namespace>
+   ```
+   *(Example terminal output: `Verified by @johndoe` followed by `reports-batch ... 1/1 Running`)*.
+3. **Write Your Explanation:** Formulate one sentence naming the failure layer and the exact change you made.
+4. **Submit via GitHub Issue:** Open a **[New Submission Issue](https://github.com/alamz-tech/k8s-triage/issues/new/choose)** using the pre-formatted submission form.
+5. **Deadline:** 31 October 2026 (one week from session date).
 
 Submissions with incorrect diagnoses will still receive detailed feedback if your reasoning is explained.
 
