@@ -71,7 +71,7 @@ kubectl apply -f repo-now/assignment-round-5.yaml
 1. Fix the manifest so the pod reaches a healthy `Running` state and `Ready` condition.
 2. Take a screenshot showing `kubectl get pods` in the respective namespace with status `Running` and `1/1` Ready.
 3. Write one sentence naming the failure layer and the exact change you made.
-4. Submit via a GitHub issue on this repository or message Hussein Alamutu on LinkedIn at [linkedin.com/in/hussein-alamutu](https://linkedin.com/in/hussein-alamutu).
+4. Submit via a **[GitHub Issue on this repository](https://github.com/alamz-tech/k8s-triage/issues/new/choose)** (use the pre-formatted Submission Form) or message Hussein Alamutu on LinkedIn at [linkedin.com/in/hussein-alamutu](https://linkedin.com/in/hussein-alamutu).
 5. Deadline: 31 October 2026 (one week from session date).
 
 Submissions with incorrect diagnoses will still receive detailed feedback if your reasoning is explained.

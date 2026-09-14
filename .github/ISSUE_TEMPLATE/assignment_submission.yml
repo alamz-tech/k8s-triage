@@ -1,0 +1,80 @@
+name: Take-Home Assignment Submission (Rounds 4 & 5)
+description: Submit your diagnosis, explanation, and verification screenshot for Round 4 or Round 5.
+title: "[Submission]: <Your Name> - <Round 4 / Round 5>"
+labels: ["submission", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### DevFest Abuja 2026: Masterclass Submission
+        Thanks for taking on the debugging challenge! Fill out this form with your diagnosis and screenshot. Hussein will review your submission and reply directly on this issue.
+
+  - type: input
+    id: name
+    attributes:
+      label: Your Full Name
+      description: Enter your name or preferred handle.
+      placeholder: e.g., Jane Doe
+    validations:
+      required: true
+
+  - type: input
+    id: linkedin
+    attributes:
+      label: LinkedIn Profile URL (Optional)
+      description: Include your LinkedIn profile if you would like to connect.
+      placeholder: https://linkedin.com/in/your-profile
+    validations:
+      required: false
+
+  - type: dropdown
+    id: round
+    attributes:
+      label: Which Round Are You Submitting?
+      options:
+        - "Round 4: reports-batch (Scheduling Layer)"
+        - "Round 5: image-resizer (Resources Layer)"
+        - "Both Rounds (Round 4 and Round 5)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Identified Failure Layer
+      options:
+        - "Scheduling Layer"
+        - "Resources / Linux Cgroups Layer"
+        - "Image / Registry Layer"
+        - "Container / Runtime Layer"
+        - "Networking / Health Probe Layer"
+    validations:
+      required: true
+
+  - type: textarea
+    id: explanation
+    attributes:
+      label: One-Sentence Explanation of Cause and Fix
+      description: Name the root cause you found and the exact change you made to fix the manifest.
+      placeholder: "Example: The pod was stuck in Pending because CPU requests (64 cores) exceeded node capacity; I fixed it by lowering requests.cpu to 100m."
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot Proof (kubectl get pods)
+      description: Drag and drop your terminal screenshot showing the workload in Running status with 1/1 Ready.
+      placeholder: "[Drag and drop your screenshot image here]"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Confirmation
+      options:
+        - label: I verified that the pod reached Running status and 1/1 Ready on my cluster or Killercoda.
+          required: true
+        - label: I understand that incorrect answers with clear reasoning will still receive full feedback.
+          required: true
