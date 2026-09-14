@@ -9,7 +9,7 @@ body:
         ### DevFest Abuja 2026: Masterclass Submission
         Thanks for taking on the debugging challenge! Fill out this form with your diagnosis and verification screenshot.
         
-        **Privacy Note:** To protect your privacy against web scrapers, do NOT post your personal email address or phone number in this public issue. Once Hussein reviews and approves your submission, you will receive instructions directly in this issue thread to claim your **Career Accelerator WhatsApp Group** invite privately.
+        **Privacy Note:** To protect your privacy against web scrapers, do NOT post your personal email address or phone number in this public issue. Once your submission is reviewed and approved, you will receive instructions directly in this issue thread to claim your **Career Accelerator WhatsApp Group** invite privately.
 
   - type: input
     id: name
@@ -57,17 +57,17 @@ body:
     id: explanation
     attributes:
       label: One-Sentence Explanation of Cause and Fix
-      description: Name the root cause you found and the exact change you made to fix the manifest.
-      placeholder: "Example: The pod was stuck in Pending because CPU requests (64 cores) exceeded node capacity; I fixed it by lowering requests.cpu to 100m."
+      description: Name the root cause you found and the exact YAML change you made to resolve the issue.
+      placeholder: "Example: The pod was stuck in Pending because CPU requests (64 cores) exceeded node capacity; I fixed it by changing requests.cpu to 100m."
     validations:
       required: true
 
   - type: textarea
     id: screenshot
     attributes:
-      label: Screenshot Proof (kubectl get pods)
-      description: Drag and drop your terminal screenshot showing the workload in Running status with 1/1 Ready.
-      placeholder: "[Drag and drop your screenshot image here]"
+      label: Screenshot Proof (with Terminal Watermark)
+      description: "To verify authenticity, your screenshot MUST show you running: echo "Verified by @<your-github-username>" && kubectl get pods -n <namespace> so your GitHub handle appears directly above the healthy 1/1 Running pods."
+      placeholder: "[Drag and drop your terminal screenshot showing your username watermark and 1/1 Running pods]"
     validations:
       required: true
 
@@ -77,6 +77,8 @@ body:
       label: Confirmation
       options:
         - label: I verified that the pod reached Running status and 1/1 Ready on my cluster or Killercoda.
+          required: true
+        - label: My terminal screenshot includes my GitHub handle watermark (echo "Verified by @<username>").
           required: true
         - label: I understand that incorrect answers with clear reasoning will still receive full feedback.
           required: true
