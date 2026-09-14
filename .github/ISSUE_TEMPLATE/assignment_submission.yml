@@ -7,9 +7,9 @@ body:
     attributes:
       value: |
         ### DevFest Abuja 2026: Masterclass Submission
-        Thanks for taking on the debugging challenge! Fill out this form with your diagnosis, verification screenshot, and contact email.
+        Thanks for taking on the debugging challenge! Fill out this form with your diagnosis and verification screenshot.
         
-        **Reward:** Verified submissions will receive an invite to the **Career Accelerator WhatsApp Group** sent directly to the email address you provide below.
+        **Privacy Note:** To protect your privacy against web scrapers, do NOT post your personal email address or phone number in this public issue. Once Hussein reviews and approves your submission, you will receive instructions directly in this issue thread to claim your **Career Accelerator WhatsApp Group** invite privately.
 
   - type: input
     id: name
@@ -17,15 +17,6 @@ body:
       label: Your Full Name
       description: Enter your name or preferred handle.
       placeholder: e.g., Jane Doe
-    validations:
-      required: true
-
-  - type: input
-    id: email
-    attributes:
-      label: Email Address (For Reward Delivery)
-      description: Where should Hussein send your private Career Accelerator WhatsApp Group invite upon verification?
-      placeholder: name@example.com
     validations:
       required: true
 
