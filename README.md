@@ -66,11 +66,18 @@ kubectl apply -f assignment-round-4.yaml
 kubectl apply -f assignment-round-5.yaml
 ```
 
-### Rewards for Submissions
-All verified submissions will receive:
-1. **Invite to the Career Accelerator WhatsApp Group**
-2. **20% Discount to The Production Cohort**
-3. **Personalized feedback on your diagnosis and fix**
+### 🏆 Grand Bounty: Top 3 Full Scholarships (Apprenticeship + Career Layer)
+
+The **first 3 engineers** to successfully solve the take-home triage assignments (Rounds 4 & 5), capture verified terminal proof, and submit via GitHub Issue / send a message will receive:
+
+1. 🎓 **100% All-Paid Access to the 3-Month Cloud & DevOps Apprenticeship** (valued at ₦180,000 / $180) — all 12 production engineering sprints, zero-cost LocalStack labs, live weekend masterclasses, and oral capstone defense completely free.
+2. 🚀 **100% Free Career Accelerator & Advisory Access** — direct engineering mentorship, AI mock technical interview loops, CV positioning, and exclusive platform leads.
+3. 💬 **Direct 1-on-1 Review & Feedback** on your diagnosis from the lead systems engineer.
+
+**All other verified submissions** will receive:
+1. Invite to the Career Accelerator & Community WhatsApp Groups
+2. 20% Discount to The Production Cohort & Apprenticeship
+3. Personalized architectural feedback on your diagnosis and fix
 
 ### Submission Instructions
 
