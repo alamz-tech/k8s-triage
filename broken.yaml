@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: checkout-api
-          image: nginx:1.27.0-alpine
+          image: nginx:1.27.0-alpin
           ports:
             - containerPort: 80
 ---
@@ -55,15 +55,12 @@ spec:
           command: ["/bin/sh", "-c"]
           args:
             - |
-              if [ -z "" ]; then
+              if [ -z "$DB_HOST" ]; then
                 echo "FATAL: DB_HOST environment variable is not set. Exiting." >&2
                 exit 1
               fi
-              echo "Connected to database at . Processing queue..."
+              echo "Connected to database at $DB_HOST. Processing queue..."
               while true; do sleep 3600; done
-          env:
-            - name: DB_HOST 
-            value: "postgres.internal.svc.cluster.local"
 ---
 apiVersion: v1
 kind: Namespace
