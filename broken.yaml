@@ -54,7 +54,7 @@ spec:
           image: busybox:1.36.1
           command: ["/bin/sh", "-c"]
           env:
-            - name: DB_HOST: 
+            - name: DB_HOST 
               value: "postgres.internal.svc.cluster.local"
           args:
             - |
