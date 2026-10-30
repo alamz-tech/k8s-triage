@@ -12,6 +12,27 @@ Most engineers run `kubectl logs` first. When a container never started, there a
 
 ---
 
+## Repository Structure
+
+```text
+.
+├── live/
+│   ├── broken.yaml              # Broken workloads for live Rounds 1, 2, and 3
+│   ├── fix-round-1.yaml         # Fix manifest for checkout-api (Image layer)
+│   ├── fix-round-2.yaml         # Fix manifest for orders-worker (Container layer)
+│   ├── fix-round-3.yaml         # Fix manifest for reports-web (Networking layer)
+│   └── fix.yaml                 # Combined fix for all three live rounds
+├── assignments/
+│   ├── assignment-round-4.yaml  # reports-batch (Scheduling layer)
+│   └── assignment-round-5.yaml  # image-resizer (Resources layer)
+├── .github/
+│   └── ISSUE_TEMPLATE/          # Structured submission template for solutions
+├── LICENSE
+└── README.md
+```
+
+---
+
 ## The Five Rounds
 
 | Round | Namespace | Workload | Layer | Symptom | When |
@@ -31,13 +52,13 @@ During the live masterclass on 31 October 2026, we diagnose and resolve Rounds 1
 Open a terminal on [Killercoda Kubernetes Playground](https://killercoda.com/playgrounds/scenario/kubernetes) and apply the broken workloads:
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/alamz-tech/k8s-triage/main/broken.yaml
+kubectl apply -f https://raw.githubusercontent.com/alamz-tech/k8s-triage/main/live/broken.yaml
 ```
 
 If working from a cloned repository:
 
 ```bash
-kubectl apply -f broken.yaml
+kubectl apply -f live/broken.yaml
 ```
 
 Check the status of the three workloads:
@@ -50,20 +71,48 @@ kubectl get pods -n round-3
 
 ---
 
+## Live Fix Manifests (Rounds 1 to 3)
+
+After diagnosing each round, apply the corresponding fix manifest:
+
+### Round 1 Fix (`checkout-api`)
+```bash
+kubectl apply -f https://raw.githubusercontent.com/alamz-tech/k8s-triage/main/live/fix-round-1.yaml
+```
+
+### Round 2 Fix (`orders-worker`)
+```bash
+kubectl apply -f https://raw.githubusercontent.com/alamz-tech/k8s-triage/main/live/fix-round-2.yaml
+```
+
+### Round 3 Fix (`reports-web`)
+```bash
+kubectl apply -f https://raw.githubusercontent.com/alamz-tech/k8s-triage/main/live/fix-round-3.yaml
+```
+
+### All-in-One Fix (Rounds 1 to 3)
+```bash
+kubectl apply -f https://raw.githubusercontent.com/alamz-tech/k8s-triage/main/live/fix.yaml
+```
+
+*(If working from a local clone, replace the URL with `live/fix-round-1.yaml`, `live/fix-round-2.yaml`, `live/fix-round-3.yaml`, or `live/fix.yaml`)*.
+
+---
+
 ## Take-Home Assignments (Rounds 4 and 5)
 
 Apply each assignment manifest individually:
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/alamz-tech/k8s-triage/main/assignment-round-4.yaml
-kubectl apply -f https://raw.githubusercontent.com/alamz-tech/k8s-triage/main/assignment-round-5.yaml
+kubectl apply -f https://raw.githubusercontent.com/alamz-tech/k8s-triage/main/assignments/assignment-round-4.yaml
+kubectl apply -f https://raw.githubusercontent.com/alamz-tech/k8s-triage/main/assignments/assignment-round-5.yaml
 ```
 
 If working from a cloned repository:
 
 ```bash
-kubectl apply -f assignment-round-4.yaml
-kubectl apply -f assignment-round-5.yaml
+kubectl apply -f assignments/assignment-round-4.yaml
+kubectl apply -f assignments/assignment-round-5.yaml
 ```
 
 ### Apprenticeship Sponsorship: First 3 Verified Submissions
