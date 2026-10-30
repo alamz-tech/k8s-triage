@@ -63,7 +63,7 @@ spec:
               while true; do sleep 3600; done
           env:
             - name: DB_HOST 
-              value: "postgres.internal.svc.cluster.local"
+            value: "postgres.internal.svc.cluster.local"
 ---
 apiVersion: v1
 kind: Namespace
