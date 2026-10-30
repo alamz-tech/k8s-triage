@@ -8,11 +8,11 @@ body:
       value: |
         ### DevFest Abuja 2026: Masterclass Submission
         Thanks for taking on the debugging challenge! Fill out this form with your diagnosis and verification screenshot.
-        
-        **Submission Rewards:** Verified submissions will receive:
-        1. An invite to the **Career Accelerator WhatsApp Group**
-        2. A **20% Discount to The Production Cohort**
-        
+
+        **Submission Rewards & Sponsorship:**
+        - **First 3 Verified Submissions:** Full-tuition sponsorship for the 3-Month Cloud & DevOps Apprenticeship + Lifetime Career Accelerator access.
+        - **All Other Verified Submissions:** Invite to the Career Accelerator WhatsApp community + 20% discount on the Production Cohort & Apprenticeship.
+
         **Privacy Note:** To protect your privacy against web scrapers, do NOT post your personal email address or phone number in this public issue. Once your submission is reviewed and approved, you will receive instructions directly in this issue thread to claim your rewards privately.
 
   - type: input
@@ -70,7 +70,10 @@ body:
     id: screenshot
     attributes:
       label: Screenshot Proof (with Terminal Watermark)
-      description: "To verify authenticity, your screenshot MUST show you running: echo "Verified by @<your-github-username>" && kubectl get pods -n <namespace> so your GitHub handle appears directly above the healthy 1/1 Running pods."
+      description: >-
+        To verify authenticity, your screenshot MUST show you running:
+        echo "Verified by @<your-github-username>" && kubectl get pods -n <namespace>
+        so your GitHub handle appears directly above the healthy 1/1 Running pods.
       placeholder: "[Drag and drop your terminal screenshot showing your username watermark and 1/1 Running pods]"
     validations:
       required: true
@@ -82,7 +85,9 @@ body:
       options:
         - label: I verified that the pod reached Running status and 1/1 Ready on my cluster or Killercoda.
           required: true
-        - label: My terminal screenshot includes my GitHub handle watermark (echo "Verified by @<username>").
+        - label: >-
+            My terminal screenshot includes my GitHub handle watermark
+            (echo "Verified by @<username>").
           required: true
         - label: I understand that incorrect answers with clear reasoning will still receive full feedback.
           required: true

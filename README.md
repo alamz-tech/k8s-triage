@@ -70,8 +70,8 @@ kubectl apply -f assignment-round-5.yaml
 
 The first 3 engineers to successfully solve both take-home triage assignments (Rounds 4 & 5), capture verified terminal proof, and submit within 3 days (by Tuesday, 3 November 2026, 11:59 PM WAT) will receive:
 
-1. **Full-Tuition Sponsorship for the 3-Month Cloud & DevOps Apprenticeship** (valued at ₦180,000 / $180) — all 12 production engineering sprints, zero-cost LocalStack labs, live weekend masterclasses, and capstone oral defense.
-2. **Full Lifetime Access to the Career Accelerator** (normally ₦100,000 / $100) — direct engineering mentorship, AI mock technical interview loops, CV positioning, and curated leads.
+1. **Full-Tuition Sponsorship for the 3-Month Cloud & DevOps Apprenticeship** (valued at ₦180,000 / $180) - all 12 production engineering sprints, zero-cost LocalStack labs, live weekend masterclasses, and capstone oral defense.
+2. **Full Lifetime Access to the Career Accelerator** (normally ₦100,000 / $100) - direct engineering mentorship, AI mock technical interview loops, CV positioning, and curated leads.
 3. **Direct 1-on-1 Review & Feedback** on your diagnosis from the lead systems engineer.
 
 **All other verified submissions within the 3-day window will receive:**
@@ -89,7 +89,7 @@ The first 3 engineers to successfully solve both take-home triage assignments (R
    *(Example terminal output: `Verified by @johndoe` followed by `reports-batch ... 1/1 Running`)*.
 3. **Write Your Explanation:** Formulate one sentence naming the failure layer and the exact change you made.
 4. **Submit:** Either open a **[New Submission Issue](https://github.com/alamz-tech/k8s-triage/issues/new/choose)** using the pre-formatted submission form or send a message with your verified terminal output.
-5. **Submission Deadline:** Exactly 3 days from the DevFest masterclass — Tuesday, 3 November 2026 at 11:59 PM WAT.
+5. **Submission Deadline:** Exactly 3 days from the DevFest masterclass - Tuesday, 3 November 2026 at 11:59 PM WAT.
 
 Submissions with incorrect diagnoses will still receive detailed feedback if your reasoning is explained.
 
