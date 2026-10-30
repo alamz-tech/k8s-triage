@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: checkout-api
-          image: nginx:1.27.0-alpin
+          image: nginx:1.27.0-alpine
           ports:
             - containerPort: 80
 ---
@@ -53,6 +53,9 @@ spec:
         - name: orders-worker
           image: busybox:1.36.1
           command: ["/bin/sh", "-c"]
+          env:
+            - name: DB_HOST: 
+              value: "postgres.internal.svc.cluster.local"
           args:
             - |
               if [ -z "" ]; then
