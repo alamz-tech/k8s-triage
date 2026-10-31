@@ -45,5 +45,5 @@ spec:
               while true; do sleep 3600; done
           resources:
             requests:
-              cpu: "64"
+              cpu: "100m"
               memory: "256Mi"
