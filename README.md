@@ -24,7 +24,9 @@ Most engineers run `kubectl logs` first. When a container never started, there a
 │   └── fix.yaml                 # Combined fix for all three live rounds
 ├── assignments/
 │   ├── assignment-round-4.yaml  # reports-batch (Scheduling layer)
-│   └── assignment-round-5.yaml  # image-resizer (Resources layer)
+│   ├── assignment-round-5.yaml  # image-resizer (Resources layer)
+│   ├── fix-round-4.yaml         # Fix manifest for reports-batch (Scheduling layer)
+│   └── fix-round-5.yaml         # Fix manifest for image-resizer (Resources layer)
 ├── .github/
 │   └── ISSUE_TEMPLATE/          # Structured submission template for solutions
 ├── LICENSE
